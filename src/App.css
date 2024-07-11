@@ -1,6 +1,13 @@
 .App {
-  max-width: 860px;
+  max-width: 1000px;
   margin: 40px;
+}
+
+.background {
+  background-image: url('https://backyardbirdshop.com/wp-content/uploads/Colenes-Food-Court-1024x768.jpg');
+  background-size: cover;
+  height: 1000px;
+  position: relative;
 }
 
 .chessboard {
@@ -8,6 +15,7 @@
   height: 650px;
   position: absolute;
   z-index: -100;
+  float: left;
 }
 
 .chessGrid {
@@ -20,8 +28,120 @@
   z-index: 100;
   width: 590px;
   height: 590px;
+  float: left;
 }
 
 .buttonWrapper {
   width: 100%;
+}
+
+.pieceHolder {
+  width: 300px;
+  height: 600px;
+  background-color: red;
+  float: right;
+  position: relative;
+  flex: auto;
+}
+
+.everythingHolder {
+  width:1000px
+}
+
+.pieceHolderdrawing {
+  border: 10px solid #4d110d;
+  width: 100%;
+  height: 100%;
+  background-color: #783b29;
+}
+
+.holderside {
+  height: 300px;
+}
+
+.blackSide {
+  border-bottom: 5px solid #4d110d;
+}
+
+.whiteSide {
+  border-top: 5px solid #4d110d;
+}
+
+.pieceGrid {
+  display: grid;
+  grid-template-columns: 75px 75px 75px 75px;
+  grid-template-rows: 75px 75px 75px 75px;
+  grid-gap: 0px;
+  position: relative;
+  z-index: 100;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.birdChess {
+  color: white;
+  font-family:Optima, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.button {
+  background-image: url(/public/img/nesteggs.png);
+  background-size: cover;
+  padding: 30px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  color:#783b29;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-image: url(/public/img/birdnest.png);
+  background-size:cover;
+}
+
+.button:active {
+  background-image: url(/public/img/birdnest.png);
+  background-size:cover;
+  background-color: rgb(0,0,0,0.3);
+}
+
+.turnCounterHolder {
+  float: right;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -95px;
+  background-color: #783b29;
+  border: 10px solid #4d110d;
+  width: 150px;
+  height: 70px;
+}
+
+.hidden {
+  display: none;
+}
+
+.winnerModal {
+  z-index: 900;
+  padding: 50px;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  top: 30%;
+  left: 750px;
+  height: 200px;
+  width: 200px;
+  margin-left: -375px;
+}
+
+.eagleWinner {
+  max-width: 100%;
+}
+
+.closedModule {
+  display: none;
 }

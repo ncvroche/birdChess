@@ -7,3 +7,17 @@
     max-width: 100%;
     object-fit: contain;
   }
+
+  .selected {
+    background: rgba(0,255,255,0.4)
+  }
+
+  .potential {
+    background: rgba(255,0,0,0.5);
+  }
+  
+  .potentialblank {
+    background: rgba(255,0,0,0.5);
+    width: 100%;
+    height: 100%;
+  }
